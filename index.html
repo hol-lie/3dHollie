@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hollie's 3D Head Model</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      color: white;
+      flex-direction: column;
+    }
+    model-viewer {
+      width: 100%;
+      max-width: 600px;
+      height: 600px;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hollie’s 3D Scan</h1>
+  <model-viewer
+    src="hollieHeadshot.glb"
+    alt="3D scan of Hollie's head"
+    auto-rotate
+    rotation-per-second="30deg"
+    camera-controls
+    disable-zoom
+    background-color="#111"
+    shadow-intensity="1"
+    exposure="1"
+    style="border-radius: 20px;">
+  </model-viewer>
+</body>
+</html>
